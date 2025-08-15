@@ -1,0 +1,49 @@
+/* App.css */
+.app-container {
+  width: 100%;
+  height: 100vh; /* full viewport height */
+  position: relative;
+  overflow: hidden;
+}
+
+/* Make Dither fill the entire container */
+.app-container canvas {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Center DecryptedText */
+.text-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  pointer-events: none;
+  z-index: 1;
+  mix-blend-mode: exclusion;
+}
+
+.text-border {
+  padding: 1rem;
+  border: 1rem solid white;
+  mix-blend-mode: color-dodge;
+}
+
+.text {
+  position: relative;
+  font-size: 7rem;
+  font-weight: bold;
+  color: white;
+  mix-blend-mode: exclusion;
+}
+
+/* Dock at bottom */
+.dock-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  z-index: 2;
+}
