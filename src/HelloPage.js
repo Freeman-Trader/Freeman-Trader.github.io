@@ -1,4 +1,4 @@
-import { VscHome, VscAccount, VscSettingsGear } from "react-icons/vsc";
+import { VscAccount } from "react-icons/vsc";
 import Dither from './react-bits-components/Dither'
 import Dock from './react-bits-components/Dock';
 import TextType from './react-bits-components/TextType';
